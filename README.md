@@ -14,11 +14,11 @@ The following images show a comparison between CPU, naive, work-efficient, and t
 
 ![](./img/scan-chart.png)
 
-The following images show a comparison between CPU without scan, CPU with scan, and work-efficient implementations of the compression algorithm.
+The following images show a comparison between CPU without scan, CPU with scan, and work-efficient implementations of the compaction algorithm.
 
-![](./img/compression-data.png)
+![](./img/compaction-data.png)
 
-![](./img/compression-chart.png)
+![](./img/compaction-chart.png)
 
 ## Program Output
 
