@@ -10,15 +10,15 @@ CUDA Stream Compaction
 
 The following images show a comparison between CPU, naive, work-efficient, and thrust implementations of the scan algorithm.
 
-![](./images/scan-data.png)
+![](./img/scan-data.png)
 
-![](./images/scan-chart.png)
+![](./img/scan-chart.png)
 
 The following images show a comparison between CPU without scan, CPU with scan, and work-efficient implementations of the compression algorithm.
 
-![](./images/compression-data.png)
+![](./img/compression-data.png)
 
-![](./images/compression-chart.png)
+![](./img/compression-chart.png)
 
 ## Program Output
 
