@@ -12,8 +12,7 @@ namespace StreamCompaction {
             return timer;
         }
 
-        const int BLOCK_SIZE = 256;
-        // TODO: __global__
+        const int BLOCK_SIZE = 512;
 
         __global__ void kernScan(int n, int *odata, int *idata, int offset)
         {

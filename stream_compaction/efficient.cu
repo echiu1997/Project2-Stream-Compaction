@@ -12,7 +12,7 @@ namespace StreamCompaction {
             return timer;
         }
 
-        const int BLOCK_SIZE = 32;
+        const int BLOCK_SIZE = 256;
         
         __global__ void kernUpSweep(int n, int stride, int *data)
         {
