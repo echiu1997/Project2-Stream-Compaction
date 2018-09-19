@@ -6,19 +6,31 @@ CUDA Stream Compaction
 * Eric Chiu
 * Tested on: Windows 10 Education, Intel(R) Xeon(R) CPU E5-1630 v4 @ 3.60GHz 32GB, NVIDIA GeForce GTX 1070 (SIGLAB)
 
+## Description
+
+This project explores and compares different CPU and GPU implementations of the scan (prefix sum) and the compaction algorithms. Some implementations include naive and work efficient methods.
+
 ## Performance Analysis
 
-The following images show a comparison between CPU, naive, work-efficient, and thrust implementations of the scan algorithm.
+
+The following images below show a comparison between CPU, naive, work-efficient, and thrust implementations of the scan algorithm.
+
 
 ![](./img/scan-data.png)
 
 ![](./img/scan-chart.png)
 
-The following images show a comparison between CPU without scan, CPU with scan, and work-efficient implementations of the compaction algorithm.
+
+The following images below show a comparison between CPU without scan, CPU with scan, and work-efficient implementations of the compaction algorithm.
+
 
 ![](./img/compaction-data.png)
 
 ![](./img/compaction-chart.png)
+
+
+Overall, the thrust implementation had the best performance long term. In the beginning with smaller array sizes however, the CPU implementation was the fastest, then naive implementation, then work-efficient implementation, and then thrust implementation. As the array size increased, different implementations experienced different bottlenecks. I believe the CPU implementation experienced a bottleneck in the number of operations because it goes through serial memory processing (as to parallel memory processing). I believe the naive and work-efficient implementations experienced a bottleneck in global memory access. 
+
 
 ## Program Output
 
